@@ -96,6 +96,7 @@ console.log(typeof foo); //object - 함수
 ## 5. 배열의 반복
 ### forEach
 - 함수형 프로그래밍에 따른 for문을 대체하는 고차함수
+- 함수를 인자로 받는다.
 - Array.prototype.forEach 메서드 : 자신의 내부에서 반복문을 실행한다. 내부에서 반복문을 통해 자신을 호출한 배열을 순회하면서 수행할 처리를 콜백 함수로 전달받아 반복 호출한다. 
 - 콜백함수 호출시 3개의 인자 전달. 메서드를 호출한 배열의 요소값과 인덱스, forEach메서드를 호출한 배열(this)를 순차적으로 전달한다.
 ```js
@@ -112,8 +113,26 @@ console.log(pows);
 - for문에 비해 성능이 좋지는 않지만, 가독성이 좋다. 
 
 ### map
+- 자신을 호출한 배열의 모든 요소를 순회하면서 인수로 전달받은 콜백함수를 반복 호출한다. 
+- 콜백함수의 반환값들로 구성된 새로운 배열을 반환한다. 원본배열 변경x
+```js
+//array.map(callbackFunction(currenValue, index, array), thisArg)
 
+const coffee = [1,2,3];
+const order = coffee.map(item => item*2);
+console.log(coffee); //[ 1, 2, 3 ]
+console.log(order); //[ 2, 4, 6 ]
 
+//객체 타입 컨트롤
+const cafes = [
+    {id:1, name:'starbucks'},
+    {id:2, name:'hollys'},
+    {id:3, name:'twosmoe'}
+];
+
+const names = cafes.map(item => item.name);
+console.log(names); //[ 'starbucks', 'hollys', 'twosmoe' ]
+```
 
 ⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
 
