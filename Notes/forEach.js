@@ -59,3 +59,20 @@ coffees.multiply([1,2,3]);
 console.log(coffees.coffeeArr, 'coffeeArr'); //[ 1, 4, 9 ] coffeeArr
 
 //ex6 - 폴리필
+if(!Array.prototype.forEach){
+    Array.prototype.forEach = function(callback, thisArg){
+    //첫번째 인자가 함수가 아니라면, TypeError
+        if(typeof callback !== 'function'){
+            throw new TypeError(callback +'is not a function');
+        }
+        //this로 사용할 두번째 인자가 없으면 전역객체를 this로 사용
+        thisArg = thisArg || window;
+
+        //for문으로 배열 순회하면서 콜백함수를 호출
+        for(var i=0;i<this.length;i++){
+            //call 메서드로 thisArg를 전달, 콜백함수를 호출
+            //콜백함수의 인수로 배열 요소, 인덱스, 배열 자신을 전달
+            callback.call(thisArg, this[i], i, this);
+        }
+    }
+}

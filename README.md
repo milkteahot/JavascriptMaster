@@ -108,6 +108,8 @@ console.log(typeof foo); //object - 함수
     - 원본 배열 this 를 변경하지 않는다. 콜백함수를 통해 원본 배열을 변경할 수 있다. 
     - forEach 메서드의 반환값은 undefined 이다. 
     - 콜백함수 내부의 this는 undefined를 가리킨다. 따라서 1) 콜백함수 내부에서 forEach 메서드의 두번째 인자로 this를 전달하거나 2) 화살표 함수를 사용한다.(화살표 함수는 함수 자체의 this바인딩을 갖지 않으므로, 상위 스코프의 this를 그대로 참조한다. )
+    - 희소 배열의 경우 존재하지 않는 요소는 순회대상에서 제외된다.
+    - for문에 비해 성능이 좋지는 않지만, 가독성이 좋다. 
 
 
 ⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
