@@ -18,7 +18,12 @@
         let num = 0;
         const render = function(){ $counter.innerHTML = num; };
 
-
+        $increase.onclick = function(){
+            num++;
+            console.log('increase 버튼 클릭', num);
+            render();
+        };
+ 
     </script>
 </body>
 </html>
