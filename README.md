@@ -2,6 +2,13 @@
 - 자바스크립트 마스터하기
 
 ## 목차
+1. [변수와 타입](https://github.com/milkteahot/JavascriptMaster#%EB%B3%80%EC%88%98%EC%99%80-%ED%83%80%EC%9E%85)
+2. [조건문과 반복문]
+3. [함수]
+4. [배열]
+5. [배열의 반복]
+6. [객체]
+7. [배열의 메서드]
 
 ## 변수와 타입
 - 변수variable란, `하나의 값을 저장`하기 위해 확보한 메모리 공간 자체 또는 그 메모리 공간을 식별하기 위해 붙인 이름이다. 
@@ -35,6 +42,53 @@
     foo = function(){};
     console.log(typeof foo); //object - 함수
     ```
+⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
+
+## 조건문과 반복문
+### 조건문
+- if...else
+- switch
+    ```js
+    let coffee;
+    switch(coffee){
+        case 1: coffee = 'americano';
+            break;
+        case 2: coffee = 'latte';
+            break;
+        default: coffee = 'coffee';
+    }
+    ```
+### 반복문
+- for문은 반복 횟수가 명확할 때, while문은 반복 횟수가 불명확할 때 주로 사용.
+- for문
+    ```js
+    for(let i=0;i<3;i++){
+        console.log(i);
+    }
+    ```
+
+- while문
+    ```js
+    let count = 0;
+
+    while(true){
+        count++;
+        console.log(count);
+        if(count === 3) break;
+    }
+    ```
+
+- do...while문
+    ```js
+    let count = 0;
+
+     do {
+        count++;
+        console.log(count);
+    } while(count<3);
+    ```
+
+
 
 ## Reference
 1. Inside Javascript(송형주, 고현준 저)
@@ -49,3 +103,7 @@
     2. Primitive Types(원시 타입)
     3. Value Types and Reference Types
     4. Implicit, Explicit, Nominal, Structuring and Duck Typing
+
+⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
+
+4. 함수형 프로그래밍
