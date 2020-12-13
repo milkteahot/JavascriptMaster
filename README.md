@@ -1,6 +1,6 @@
 # How to be a Javascript Master
 - 자바스크립트 마스터하기
-- [Following the FrontEnd RoadMap]
+- [Following the FrontEnd RoadMap](https://github.com/milkteahot/JavascriptMaster/blob/master/FrontendRoadmap/index.md#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%A1%9C%EB%93%9C%EB%A7%B5-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
 - [Following the BackEnd RoadMap] 
 
 ## 목차
@@ -93,6 +93,47 @@ console.log(typeof foo); //object - 함수
     ```
 
 ⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
+
+## 3. 함수
+- 함수는 입력을 받고, 출력을 하는 일련의 과정이다. 
+- 함수 정의 방식은 4가지가 있다.
+    - 함수 선언문
+    ```js
+    function add(x,y){
+        return x+y;
+    }
+    ```
+    - 함수 표현식
+    ```js
+    var add = function(){
+        return x+y;
+    };
+    ```
+    - Function 생성자 함수
+    ```js 
+    var add = new Function('x', 'y', 'return x+y');
+    ```
+    - arrow function
+    ```js
+    var add = (x,y) => x+y;
+    ```
+
+- 함수 정의시 알맞은 인수가 전달되었는지 확인할 필요가 있다. 타입스크립트를 사용하는 것도 하나의 방법이다.
+- 즉시실행함수, 재귀함수, 내부함수, 콜백함수, 순수함수와 비순수함수가 있다.
+
+### 3.2 스코프
+- 스코프란 식별자가 유효한 범위를 말한다.
+- 자바스크립트는 렉시컬 스코프를 따른다. 함수를 어디서 정의했느냐에 따라 상위 스코프를 결정한다. 
+
+### 3.3 함수와 일급객체
+- 일급 객체 조건: 무명의 리터럴로 생성 가능, 변수에 저장가능, 함수의 매개변수로 전달 가능, 함수의 반환값으로 사용 가능
+- 자바스크립트에서 함수는 일급객체로서, 객체와 동일하게 값으로 사용할 수 있다. 
+- 차이: 일반 객체는 호출할 수 없지만 함수객체는 호출할 수 있다. 또한 함수 객체는 함수 고유의 프로퍼티를 소유한다. 
+- arguments, caller, length, name, __proto__, prototype
+
+
+⬆️ [목차로 가기](https://github.com/milkteahot/JavascriptMaster#%EB%AA%A9%EC%B0%A8)
+
 
 
 ## 5. 배열의 반복
