@@ -197,7 +197,9 @@ console.log(names); //[ 'starbucks', 'hollys', 'twosmoe' ]
     6. Function Scope, Block Scope and Lexical Scope
     7. Expression vs Statement
     8. IIFE, Modules and Namespaces
-
+    9. Message Queue and Event Loop
+    10. setTimeout, setInterval and requestAnimationFrame
+    
     19. map, reduce, filter
 
 
