@@ -6,7 +6,7 @@
 ## 목차
 1. [변수와 타입](https://github.com/milkteahot/JavascriptMaster#%EB%B3%80%EC%88%98%EC%99%80-%ED%83%80%EC%9E%85)
 2. [조건문과 반복문](https://github.com/milkteahot/JavascriptMaster#%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC-%EB%B0%98%EB%B3%B5%EB%AC%B8)
-3. [함수]
+3. [함수](https://github.com/milkteahot/JavascriptMaster#3-%ED%95%A8%EC%88%98)
 4. [배열]
 5. [배열의 반복](https://github.com/milkteahot/JavascriptMaster#5-%EB%B0%B0%EC%97%B4%EC%9D%98-%EB%B0%98%EB%B3%B5)
 6. [객체]
