@@ -60,4 +60,14 @@ const filterItems = (query) => {
      elem.toLowerCase().indexOf(query.toLowerCase()) > -1
   );
 }
-console.log(filterItems('ap'));
+// console.log(filterItems('ap'));
+
+
+var arr = ['a', 'b', 'c'];
+
+arr.includes('a', -100); // true
+arr.includes('b', -100); // true
+arr.includes('c', -100); // true
+var case4 = arr.includes('a', -3); // true
+
+console.log(case4);
