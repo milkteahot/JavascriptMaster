@@ -13,4 +13,8 @@ function solution(participant, completion) {
 
 
 //review
-var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
+var solution=(p,c)
+=>p.find(p=>
+    !c[p]--,
+    c.map(p=>c[p]=(c[p]|0)+1))
+
