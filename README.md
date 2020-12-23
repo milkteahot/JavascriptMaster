@@ -199,8 +199,19 @@ console.log(names); //[ 'starbucks', 'hollys', 'twosmoe' ]
 ### 3. 이벤트 핸들러 등록
 - 어트리뷰트 방식
 - 프로퍼티 방식
+```js
+    const $button = document.querySelector('button');
+    $button.onclick = function(){
+        console.log('button click');
+    };
+```
 - addEventListener 메서드 방식
-
+```js
+    const $button = document.querySelector('button');
+    $button.addEventListener('click', function(){
+        console.log('button click');
+    });
+```
 ### 4. 이벤트 핸들러 제거
 
 ### 5. 이벤트 객체
